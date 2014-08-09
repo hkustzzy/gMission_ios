@@ -17,17 +17,23 @@ func colorize (hex: Int, alpha: Double = 1.0) -> UIColor {
     return color
 }
 
-
 class AMSViewController: AMSlideMenuMainViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.disableSlidePanGestureForLeftMenu()
+        self.disableSlidePanGestureForRightMenu()
+        
+        println("\(self.rightPanDisabled),\(self.rightPanDisabled)")
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController.navigationBar.barTintColor = colorize(0x4F97B9,alpha: 1)
+        
+//        self.leftPanDisabled = true
+//        self.rightPanDisabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +42,7 @@ class AMSViewController: AMSlideMenuMainViewController{
     }
     
     override func segueIdentifierForIndexPathInLeftMenu(indexPath: NSIndexPath!) -> String! {
-        println("LeftMenu index: " + indexPath.row.description)
+        println("LeftMenu index: \(indexPath.row)")
         return "leftContent"
     }
     
@@ -44,11 +50,28 @@ class AMSViewController: AMSlideMenuMainViewController{
         println("RightMenu index: " + indexPath.row.description)
         return "rightContent"
     }
-
+    
+    override func deepnessForLeftMenu() -> Bool {
+        return true
+    }
+    
+    override func panGestureWarkingAreaPercent() -> CGFloat {
+        return 0.5
+    }
+    
+    
+//    override func disableSlidePanGestureForLeftMenu() {
+//        self.leftPanDisabled = true
+//    }
+//
+//    override func disableSlidePanGestureForRightMenu() {
+//        self.rightPanDisabled  = true
+//    }
+    
+    
     override func configureLeftMenuButton(button: UIButton!) {
 //        CGRect frame = button.frame;
         println("configureLeftMenuButton")
-//        var bb = UIButton(frame: CGRectMake(0, 0, 50, 50));
         button.frame = CGRectMake(0, 0, 25, 25);
         button.backgroundColor = UIColor.clearColor();
         button.setImage(UIImage(named: "v3_ic_action_user"), forState: UIControlState.Normal)

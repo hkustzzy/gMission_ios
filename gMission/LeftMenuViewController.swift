@@ -10,7 +10,7 @@ import UIKit
 
 class LeftMenuViewController: AMSlideMenuLeftTableViewController {
 
-    @IBOutlet var myImageview :UIImageView
+    @IBOutlet var myImageview :UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +25,10 @@ class LeftMenuViewController: AMSlideMenuLeftTableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
         println(segue.identifier)
+    }
+    
+    override func disableSlidePanGestureForRightMenu(){
+    
     }
     
     
