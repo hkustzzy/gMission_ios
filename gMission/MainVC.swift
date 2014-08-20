@@ -8,8 +8,8 @@
 
 import UIKit
 
+
 class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtocol, BMKMapViewDelegate {
-    
     
     //view element
     @IBOutlet var myImage: UIImageView!
@@ -26,6 +26,10 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         println(options.selectedSegmentIndex)
         clearMap()
         loadData()
+    }
+    
+    @IBAction func showmenu(){
+        self.frostedViewController.presentMenuViewController()
     }
     
     //data structure
@@ -147,7 +151,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
             
             switch(options.selectedSegmentIndex){
             case 3:
-                if(ann.locationInfo["location_name"]){
+                if(ann.locationInfo["location_name"] != nil){
                     calloutannotationview.busInfoView.locationLabel.text = ann.locationInfo["location_name"] as NSString;
                 }
                 calloutannotationview.busInfoView.nameLabel.text = ann.locationInfo["brief"] as NSString;
@@ -155,7 +159,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
                 break
             default:
                 println(ann.locationInfo)
-                if(ann.locationInfo["category_name"]){
+                if(ann.locationInfo["category_name"] != nil){
                     calloutannotationview.busInfoView.locationLabel.text = ann.locationInfo["category_name"] as NSString;
                 }
                 calloutannotationview.busInfoView.nameLabel.text = ann.locationInfo["name"] as NSString;
@@ -177,7 +181,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         
         println("didSelectAnnotationView")
         
-        if(view.annotation){
+        if(view.annotation != nil){
             
         if(view.annotation.isKindOfClass(CustomPointAnnotation)){
             var annn:CustomPointAnnotation = view.annotation as CustomPointAnnotation
@@ -189,7 +193,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
                     return
             }
             
-            if(calloutMapAnnotation){
+            if(calloutMapAnnotation != nil){
                 println("already has one calloutMapAnnotation, remove it")
                 self.mapView.removeAnnotation(calloutMapAnnotation)
                 calloutMapAnnotation = nil
@@ -221,11 +225,11 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         println("didDeselectAnnotationView")
         println(view.isKindOfClass(CallOutAnnotationView))
         
-        if(calloutMapAnnotation){
+        if(calloutMapAnnotation != nil){
             return
         }
         
-        if(calloutMapAnnotation && !view.isKindOfClass(CallOutAnnotationView)){
+        if(calloutMapAnnotation != nil && !view.isKindOfClass(CallOutAnnotationView)){
             
             println("into didDeselectAnnotationView")
             if(calloutMapAnnotation?.coordinate.latitude == view.annotation.coordinate.latitude &&
@@ -240,7 +244,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
 
     func mapView(mapView: BMKMapView!, onClickedMapBlank coordinate: CLLocationCoordinate2D) {
         println("click mapViewblank with coor: \(coordinate.latitude),\(coordinate.longitude)")
-        if(calloutMapAnnotation){
+        if((calloutMapAnnotation) != nil){
             self.mapView.removeAnnotation(calloutMapAnnotation)
             calloutMapAnnotation = nil
         }
@@ -250,7 +254,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
     override func viewWillAppear(animated: Bool) {
         
         println("viewWillAppear")
-        self.navigationController.navigationBar.barTintColor = colorize(0x4F97B9,alpha: 50)
+//        self.navigationController.navigationBar.barTintColor = colorize(0x4F97B9,alpha: 50)
 //         self.navigationController.navigationBar.backgroundColor = UIColor.blueColor()
         
         self.mapView.viewWillAppear()
@@ -278,7 +282,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         
         var dic:NSDictionary = results[0] as NSDictionary
         if(!dic.objectForKey("category_id") && !dic.objectForKey("location_id")){
-            var err:AutoreleasingUnsafePointer<NSError?> = AutoreleasingUnsafePointer()
+            var err:AutoreleasingUnsafeMutablePointer<NSError?> = AutoreleasingUnsafeMutablePointer()
             for result in results{
                 var category = LocationCategory(dictionary: result as NSDictionary, error: err)
                 println(category.toDictionary())
@@ -289,7 +293,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         
         switch(options.selectedSegmentIndex){
         case 3:
-            var err:AutoreleasingUnsafePointer<NSError?> = AutoreleasingUnsafePointer()
+            var err:AutoreleasingUnsafeMutablePointer<NSError?> = AutoreleasingUnsafeMutablePointer()
             for result in results{
                 var task = Task(dictionary: result as NSDictionary, error: err)
                 println(task.toDictionary())
@@ -315,7 +319,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
             }
             break
         default:
-            var err:AutoreleasingUnsafePointer<NSError?> = AutoreleasingUnsafePointer()
+            var err:AutoreleasingUnsafeMutablePointer<NSError?> = AutoreleasingUnsafeMutablePointer()
             for result in results{
                 var location = Location(dictionary: result as NSDictionary, error: err)
                 println(location.toDictionary())
@@ -399,7 +403,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
             println("!!!!!!!!!!!!no categories")
         }
         
-        if(loc.category_name){
+        if((loc.category_name) != nil){
             if(addLocation(loc.category_name)){
                 var center:CLLocationCoordinate2D  = CLLocationCoordinate2DMake(
                     loc.latitude, loc.longitude)

@@ -72,6 +72,7 @@
 		422B964726744E48B0C3F5EE /* NIFoundationMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE106989DD7450EA12B6BAC /* NIFoundationMethods.h */; };
 		4251CE736A544ECB94B1D920 /* NIImageResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F430F1195BF4E60A175B5B6 /* NIImageResponseSerializer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		4277AED7D72B44819C634BEA /* NimbusCore+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C21722BAD44516A907E32E /* NimbusCore+Additions.h */; };
+		42FC8E4319A397000062C520 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC8E4219A397000062C520 /* Foundation.framework */; };
 		433A0D73CBA24BA5BFE82763 /* Pods-AMSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0D85848BA472E92A7C115 /* Pods-AMSlideMenu-dummy.m */; };
 		43AE2E6930C64E5886514B39 /* NIMutableTableViewModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2D286695EA434E86E1AB8E /* NIMutableTableViewModel+Private.h */; };
 		4416507BE1C5488F8D8A2B9A /* NIOverviewSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 077849619D8640EE92D6849B /* NIOverviewSwizzling.h */; };
@@ -246,7 +247,6 @@
 		D2627E4CE916411ABEFB0A48 /* UINavigationBar+NIStyleable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4427D470CA85438F99C4904A /* UINavigationBar+NIStyleable.h */; };
 		D2788F85E0BC4F5990BB4907 /* NIOverviewLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F276CF0488E64C009C7C2CCF /* NIOverviewLogger.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D4C322CC6CCB4C429FDB8009 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E04C5EFC4B3B4A13BF19B660 /* AFURLSessionManager.h */; };
-		D4DAAC8B94DF4C82BFFCE29E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA4469F9DDF47859BCB085B /* Foundation.framework */; };
 		D67F6445D3614FF5BF672492 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2E738F463944EF9E28ED9A /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D70A7F3C282A450EBE6DD03F /* NIPagingScrollViewPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 320680A4B7B84A7FAD48A2A8 /* NIPagingScrollViewPage.h */; };
 		D736DCC54EAF48EB9B2DABE9 /* NIOverviewGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F150126B6D4D589A82E177 /* NIOverviewGraphView.h */; };
@@ -433,6 +433,7 @@
 		4111042E724C4750A5CF76EA /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		41A1C4F90A2743DB934ACEC7 /* NIDataStructures.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NIDataStructures.m; path = src/core/src/NIDataStructures.m; sourceTree = "<group>"; };
 		425F297480DC41158A0D548F /* Pods-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		42FC8E4219A397000062C520 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		433ACC592015493B8755466A /* NSMutableAttributedString+NimbusAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+NimbusAttributedLabel.h"; path = "src/attributedlabel/src/NSMutableAttributedString+NimbusAttributedLabel.h"; sourceTree = "<group>"; };
 		434A0BE9CCFA4CD6B94AECF1 /* NINetworkTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NINetworkTableViewController.m; path = src/networkcontrollers/src/NINetworkTableViewController.m; sourceTree = "<group>"; };
 		4384B630648B4C9CBB36F89A /* Pods-Nimbus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Nimbus-prefix.pch"; sourceTree = "<group>"; };
@@ -698,7 +699,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DAAC8B94DF4C82BFFCE29E /* Foundation.framework in Frameworks */,
+				42FC8E4319A397000062C520 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,6 +1206,7 @@
 		BCC3E8754E784132B2E24D38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E4219A397000062C520 /* Foundation.framework */,
 				F59518D6D7A3472499D3320E /* iOS */,
 			);
 			name = Frameworks;

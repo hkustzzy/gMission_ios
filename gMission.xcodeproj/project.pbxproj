@@ -80,6 +80,15 @@
 		42DB21321987CA1800AB8DF6 /* v3_task_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DB212F1987CA1800AB8DF6 /* v3_task_1.png */; };
 		42DB21331987CA1800AB8DF6 /* v3_task_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DB21301987CA1800AB8DF6 /* v3_task_2.png */; };
 		42DB21351987CA3300AB8DF6 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DB21341987CA3300AB8DF6 /* Bubble.swift */; };
+		42DE68A819971CE300E4F21A /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE689D19971CE300E4F21A /* RECommonFunctions.m */; };
+		42DE68A919971CE300E4F21A /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE689F19971CE300E4F21A /* REFrostedContainerViewController.m */; };
+		42DE68AA19971CE300E4F21A /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68A119971CE300E4F21A /* REFrostedViewController.m */; };
+		42DE68AB19971CE300E4F21A /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68A319971CE300E4F21A /* UIImage+REFrostedViewController.m */; };
+		42DE68AC19971CE300E4F21A /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68A519971CE300E4F21A /* UIView+REFrostedViewController.m */; };
+		42DE68AD19971CE300E4F21A /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68A719971CE300E4F21A /* UIViewController+REFrostedViewController.m */; };
+		42DE68B01997220900E4F21A /* DEMORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68AF1997220900E4F21A /* DEMORootViewController.m */; };
+		42DE68B31997279200E4F21A /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68B21997279200E4F21A /* DEMOMenuViewController.m */; };
+		42FC8E4119A38D680062C520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC8E4019A38D680062C520 /* UIKit.framework */; };
 		9986B33812694477A481F46E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE79581C2745450EB5E6EB28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -291,6 +300,23 @@
 		42DB212F1987CA1800AB8DF6 /* v3_task_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v3_task_1.png; sourceTree = "<group>"; };
 		42DB21301987CA1800AB8DF6 /* v3_task_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v3_task_2.png; sourceTree = "<group>"; };
 		42DB21341987CA3300AB8DF6 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
+		42DE689C19971CE300E4F21A /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		42DE689D19971CE300E4F21A /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		42DE689E19971CE300E4F21A /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		42DE689F19971CE300E4F21A /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		42DE68A019971CE300E4F21A /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		42DE68A119971CE300E4F21A /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		42DE68A219971CE300E4F21A /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		42DE68A319971CE300E4F21A /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		42DE68A419971CE300E4F21A /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		42DE68A519971CE300E4F21A /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		42DE68A619971CE300E4F21A /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		42DE68A719971CE300E4F21A /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		42DE68AE1997220900E4F21A /* DEMORootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMORootViewController.h; sourceTree = "<group>"; };
+		42DE68AF1997220900E4F21A /* DEMORootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMORootViewController.m; sourceTree = "<group>"; };
+		42DE68B11997279200E4F21A /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
+		42DE68B21997279200E4F21A /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
+		42FC8E4019A38D680062C520 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE79581C2745450EB5E6EB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -299,6 +325,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FC8E4119A38D680062C520 /* UIKit.framework in Frameworks */,
 				42C67B4A197B9EDD001FC9C5 /* CFNetwork.framework in Frameworks */,
 				42C67B2519794B3B001FC9C5 /* Security.framework in Frameworks */,
 				42C67B2319794B35001FC9C5 /* CoreGraphics.framework in Frameworks */,
@@ -340,6 +367,7 @@
 		423811ED1976BDA5003F7439 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				42DE689B19971CE300E4F21A /* REFrostedViewController */,
 				42C403D4198A96C900AB039A /* toast-notifications-ios-master */,
 				42C403D1198A8E0500AB039A /* SCLAlertView */,
 				42C403C51989442000AB039A /* RKTabView */,
@@ -434,6 +462,10 @@
 		42454BB11975667800465494 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				42DE68B11997279200E4F21A /* DEMOMenuViewController.h */,
+				42DE68B21997279200E4F21A /* DEMOMenuViewController.m */,
+				42DE68AE1997220900E4F21A /* DEMORootViewController.h */,
+				42DE68AF1997220900E4F21A /* DEMORootViewController.m */,
 				423D21DC1976FE8400679747 /* NewsCategoryViewController.h */,
 				423D21DD1976FE8400679747 /* NewsCategoryViewController.mm */,
 				42454BB61975694E00465494 /* AMSViewController.swift */,
@@ -685,9 +717,29 @@
 			name = Marker;
 			sourceTree = "<group>";
 		};
+		42DE689B19971CE300E4F21A /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42DE689C19971CE300E4F21A /* RECommonFunctions.h */,
+				42DE689D19971CE300E4F21A /* RECommonFunctions.m */,
+				42DE689E19971CE300E4F21A /* REFrostedContainerViewController.h */,
+				42DE689F19971CE300E4F21A /* REFrostedContainerViewController.m */,
+				42DE68A019971CE300E4F21A /* REFrostedViewController.h */,
+				42DE68A119971CE300E4F21A /* REFrostedViewController.m */,
+				42DE68A219971CE300E4F21A /* UIImage+REFrostedViewController.h */,
+				42DE68A319971CE300E4F21A /* UIImage+REFrostedViewController.m */,
+				42DE68A419971CE300E4F21A /* UIView+REFrostedViewController.h */,
+				42DE68A519971CE300E4F21A /* UIView+REFrostedViewController.m */,
+				42DE68A619971CE300E4F21A /* UIViewController+REFrostedViewController.h */,
+				42DE68A719971CE300E4F21A /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
 		A8691230DC64400FB5CF6D15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E4019A38D680062C520 /* UIKit.framework */,
 				42C67B49197B9EDD001FC9C5 /* CFNetwork.framework */,
 				42C67B2419794B3B001FC9C5 /* Security.framework */,
 				42C67B2219794B35001FC9C5 /* CoreGraphics.framework */,
@@ -873,30 +925,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C00109197C20790094001C /* QueryObject.swift in Sources */,
+				42DE68A919971CE300E4F21A /* REFrostedContainerViewController.m in Sources */,
 				42BC63BC1986914B005B6E37 /* CalloutMapAnnotation.m in Sources */,
 				42C403D3198A8E1D00AB039A /* SCLAlertView.swift in Sources */,
 				423D21DB1976E2C900679747 /* NewsCategoryCell.m in Sources */,
+				42DE68AC19971CE300E4F21A /* UIView+REFrostedViewController.m in Sources */,
 				42BC63AB19868C8E005B6E37 /* LocationCategory.m in Sources */,
 				42C0010D197EAB400094001C /* PostNewTaskVC.swift in Sources */,
+				42DE68A819971CE300E4F21A /* RECommonFunctions.m in Sources */,
 				42C403CA1989442000AB039A /* RKTabItem.m in Sources */,
+				42DE68AD19971CE300E4F21A /* UIViewController+REFrostedViewController.m in Sources */,
 				423D21DE1976FE8400679747 /* NewsCategoryViewController.mm in Sources */,
 				42C67B2C197983A7001FC9C5 /* RESTClient.swift in Sources */,
 				42454B8F197418EB00465494 /* ViewController.swift in Sources */,
 				422CC57E1976CC7E00E9987D /* MainVC.swift in Sources */,
+				42DE68B01997220900E4F21A /* DEMORootViewController.m in Sources */,
 				42BC63BB1986914B005B6E37 /* CallOutAnnotationView.m in Sources */,
 				42C00107197BFB100094001C /* Checkin.swift in Sources */,
 				42454B8D197418EB00465494 /* gMission.xcdatamodeld in Sources */,
 				42BC63BD1986914B005B6E37 /* CustomPointAnnotation.m in Sources */,
+				42DE68B31997279200E4F21A /* DEMOMenuViewController.m in Sources */,
 				42C0010B197C21A00094001C /* FilterObject.swift in Sources */,
 				42C403CB1989442000AB039A /* RKTabView.m in Sources */,
 				42454BB71975694E00465494 /* AMSViewController.swift in Sources */,
 				42BC63AE19868F7C005B6E37 /* LocationRectangle.m in Sources */,
+				42DE68AB19971CE300E4F21A /* UIImage+REFrostedViewController.m in Sources */,
 				42C403C41988EC8B00AB039A /* AnswerTaskVC.swift in Sources */,
 				42BC63B91986914B005B6E37 /* Bubble.m in Sources */,
 				4296B8C0197834910014DB6E /* MenuViewController.swift in Sources */,
 				42454B8A197418EB00465494 /* AppDelegate.swift in Sources */,
 				426FE9FD197EC58800C91A05 /* Agent.swift in Sources */,
 				42454BBD1975813D00465494 /* RightMenuViewController.swift in Sources */,
+				42DE68AA19971CE300E4F21A /* REFrostedViewController.m in Sources */,
 				4296B8BA1977C0090014DB6E /* NewsCategoryObject.m in Sources */,
 				422CC5781976C5F100E9987D /* JASidePanelController.m in Sources */,
 				426FEA00197FBC8000C91A05 /* GitHubUserModel.m in Sources */,

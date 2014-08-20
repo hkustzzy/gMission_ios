@@ -28,7 +28,7 @@ class Checkin: NSObject {
             "user_id":"user_id"
         ])
     
-    init() {
+    override init() {
         
     }
     
@@ -49,7 +49,7 @@ class Checkin: NSObject {
 //    }
     
     func display(){
-        if attachment_id{
+        if attachment_id != nil{
             println(attachment_id)
         }else{
             println("nope~")

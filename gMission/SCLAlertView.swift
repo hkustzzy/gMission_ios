@@ -28,6 +28,7 @@ class SCLAlertViewResponder {
 
 // The Main Class
 class SCLAlertView: UIView {
+    
     let kDefaultShadowOpacity: CGFloat = 0.7
     let kCircleHeight: CGFloat = 56.0
     let kCircleTopPosition: CGFloat = -12.0 // Should not be defined here. Make it dynamic
@@ -52,7 +53,16 @@ class SCLAlertView: UIView {
     var rootViewController: UIViewController
     var durationTimer: NSTimer!
     
-    init () {
+    
+    required init(coder aDecoder: NSCoder!) {
+//        self.labelView = UILabel(coder: aDecoder)
+//        super.init(coder: aDecoder)
+        fatalError("NSCoding not supported")
+        
+    }
+    
+    override init () {
+//        super.init()
         // Content View
         self.contentView = UIView(frame: CGRect(x: 0, y: kCircleHeight / 4, width: kWindowWidth, height: kWindowHeight))
         self.contentView.backgroundColor = UIColor(white: 1, alpha: 1)
@@ -158,7 +168,7 @@ class SCLAlertView: UIView {
         self.rootViewController.view.addSubview(self)
         
         // Complete text
-        if completeText {
+        if completeText != nil{
             self.doneButton.setTitle(completeText!, forState: .Normal)
         }
         
@@ -429,7 +439,7 @@ class SCLAlertViewStyleKit : NSObject {
     //// Generated Images
     
     class var imageOfCheckmark: UIImage {
-    if (Cache.imageOfCheckmark) {
+    if (Cache.imageOfCheckmark != nil) {
         return Cache.imageOfCheckmark!
         }
         
@@ -442,7 +452,7 @@ class SCLAlertViewStyleKit : NSObject {
     }
     
     class var imageOfCross: UIImage {
-    if (Cache.imageOfCross) {
+    if (Cache.imageOfCross != nil) {
         return Cache.imageOfCross!
         }
         
@@ -455,7 +465,7 @@ class SCLAlertViewStyleKit : NSObject {
     }
     
     class var imageOfNotice: UIImage {
-    if (Cache.imageOfNotice) {
+    if (Cache.imageOfNotice != nil) {
         return Cache.imageOfNotice!
         }
         
@@ -468,7 +478,7 @@ class SCLAlertViewStyleKit : NSObject {
     }
     
     class var imageOfWarning: UIImage {
-    if (Cache.imageOfWarning) {
+    if (Cache.imageOfWarning != nil) {
         return Cache.imageOfWarning!
         }
         
@@ -481,7 +491,7 @@ class SCLAlertViewStyleKit : NSObject {
     }
     
     class var imageOfInfo: UIImage {
-    if (Cache.imageOfInfo) {
+    if (Cache.imageOfInfo != nil) {
         return Cache.imageOfInfo!
         }
         

@@ -28,7 +28,7 @@ class Agent {
   init(method: String, url: String, headers: Headers?) {
     self.request = NSMutableURLRequest(URL: NSURL(string: url))
     self.request.HTTPMethod = method;
-    if (headers) {
+    if (headers != nil) {
       self.request.allHTTPHeaderFields = headers!
     }
   }
@@ -157,7 +157,7 @@ class Agent {
   func end(done: Response) -> Agent {
     let completion = { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
       let res = response as NSHTTPURLResponse!
-      if (error) {
+      if ((error) != nil) {
         done(res, data, error)
         return
       }

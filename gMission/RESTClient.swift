@@ -115,14 +115,6 @@ class RESTClient{
 
         var urlString = URL_BASE + URL_IMAGE + "/upload"
         
-//        let configuration:NSURLSessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration();
-//        let manager:AFURLSessionManager = AFURLSessionManager(sessionConfiguration: configuration)
-        
-//        let URL:NSURL = NSURL(fileURLWithPath: )
-//            NSURL URLWithString:@"http://example.com/upload"];
-//        NSURLRequest  = [NSURLRequest requestWithURL:URL];
-        
-
         var url:NSURL = NSURL(fileURLWithPath: path)
         var file:NSData = NSData(contentsOfURL: url)
         
@@ -142,22 +134,8 @@ class RESTClient{
         var manage:AFHTTPRequestOperationManager = AFHTTPRequestOperationManager()
         manage.responseSerializer.acceptableContentTypes = manage.responseSerializer.acceptableContentTypes.setByAddingObject("text/html")
         manage.POST(urlString, parameters: nil, constructingBodyWithBlock: { data -> Void in
-//            data.appendPartWithFormData(file, name: "image2000.png")
             data.appendPartWithFileData(file, name: "file", fileName: "image.jpg", mimeType: "image/jpeg")
-//            data.appendPartWithFileURL(url, name: "image", error: nil)
-//            data.appendPartWithFileURL(url, name: "image", fileName: "image.png", mimeType: "image/jpeg", error: nil)
             }, success: requestSuccess, failure: requestFailure)
-        
-        
-//        NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithStreamedRequest:request progress:&progress completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-//        if (error) {
-//        NSLog(@"Error: %@", error);
-//        } else {
-//        NSLog(@"%@ %@", response, responseObject);
-//        }
-//        }];
-//        
-//        [uploadTask resume];
         
     }
     
@@ -186,7 +164,6 @@ class RESTClient{
                     })
             }
             })
-
     }
     
     
@@ -204,7 +181,7 @@ class RESTClient{
             }
                 var err: NSError?
                 var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
-                if(err?) {
+                if(err != nil) {
                     // If there is an error parsing JSON, print it to the console
                     println("JSON Error (err!.localizedDescription)")
                 }

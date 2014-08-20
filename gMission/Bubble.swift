@@ -18,8 +18,11 @@ class LocationBubble:UIView{
     @IBOutlet var askBtn:UIButton!
     @IBOutlet var naviBtn:UIButton!
     
+    required init(coder: NSCoder) {
+        fatalError("NSCoding not supported")
+    }
     
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         naviBtn.backgroundColor = UIColor.blueColor()
         naviBtn.layer.cornerRadius = 4
