@@ -89,6 +89,16 @@
 		42DE68B01997220900E4F21A /* DEMORootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68AF1997220900E4F21A /* DEMORootViewController.m */; };
 		42DE68B31997279200E4F21A /* DEMOMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE68B21997279200E4F21A /* DEMOMenuViewController.m */; };
 		42FC8E4119A38D680062C520 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FC8E4019A38D680062C520 /* UIKit.framework */; };
+		42FC8E4619A4D9580062C520 /* DEMOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E4519A4D9580062C520 /* DEMOSecondViewController.m */; };
+		42FC8E4819A6512F0062C520 /* avatar@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42FC8E4719A6512F0062C520 /* avatar@2x.jpg */; };
+		42FC8E5A19A7B4DD0062C520 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 42FC8E4A19A7B4DD0062C520 /* MJRefresh.bundle */; };
+		42FC8E5B19A7B4DD0062C520 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E4D19A7B4DD0062C520 /* MJRefreshBaseView.m */; };
+		42FC8E5C19A7B4DD0062C520 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E4F19A7B4DD0062C520 /* MJRefreshConst.m */; };
+		42FC8E5D19A7B4DD0062C520 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5119A7B4DD0062C520 /* MJRefreshFooterView.m */; };
+		42FC8E5E19A7B4DD0062C520 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5319A7B4DD0062C520 /* MJRefreshHeaderView.m */; };
+		42FC8E5F19A7B4DD0062C520 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5519A7B4DD0062C520 /* UIScrollView+Extension.m */; };
+		42FC8E6019A7B4DD0062C520 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5719A7B4DD0062C520 /* UIScrollView+MJRefresh.m */; };
+		42FC8E6119A7B4DD0062C520 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5919A7B4DD0062C520 /* UIView+Extension.m */; };
 		9986B33812694477A481F46E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE79581C2745450EB5E6EB28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -317,6 +327,25 @@
 		42DE68B11997279200E4F21A /* DEMOMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOMenuViewController.h; sourceTree = "<group>"; };
 		42DE68B21997279200E4F21A /* DEMOMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOMenuViewController.m; sourceTree = "<group>"; };
 		42FC8E4019A38D680062C520 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42FC8E4419A4D9580062C520 /* DEMOSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOSecondViewController.h; sourceTree = "<group>"; };
+		42FC8E4519A4D9580062C520 /* DEMOSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOSecondViewController.m; sourceTree = "<group>"; };
+		42FC8E4719A6512F0062C520 /* avatar@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "avatar@2x.jpg"; sourceTree = "<group>"; };
+		42FC8E4A19A7B4DD0062C520 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		42FC8E4B19A7B4DD0062C520 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		42FC8E4C19A7B4DD0062C520 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		42FC8E4D19A7B4DD0062C520 /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		42FC8E4E19A7B4DD0062C520 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		42FC8E4F19A7B4DD0062C520 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		42FC8E5019A7B4DD0062C520 /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		42FC8E5119A7B4DD0062C520 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		42FC8E5219A7B4DD0062C520 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		42FC8E5319A7B4DD0062C520 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		42FC8E5419A7B4DD0062C520 /* UIScrollView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Extension.h"; sourceTree = "<group>"; };
+		42FC8E5519A7B4DD0062C520 /* UIScrollView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Extension.m"; sourceTree = "<group>"; };
+		42FC8E5619A7B4DD0062C520 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		42FC8E5719A7B4DD0062C520 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		42FC8E5819A7B4DD0062C520 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		42FC8E5919A7B4DD0062C520 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		AE79581C2745450EB5E6EB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -367,6 +396,7 @@
 		423811ED1976BDA5003F7439 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E4919A7B4DD0062C520 /* MJRefresh */,
 				42DE689B19971CE300E4F21A /* REFrostedViewController */,
 				42C403D4198A96C900AB039A /* toast-notifications-ios-master */,
 				42C403D1198A8E0500AB039A /* SCLAlertView */,
@@ -462,6 +492,8 @@
 		42454BB11975667800465494 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E4419A4D9580062C520 /* DEMOSecondViewController.h */,
+				42FC8E4519A4D9580062C520 /* DEMOSecondViewController.m */,
 				42DE68B11997279200E4F21A /* DEMOMenuViewController.h */,
 				42DE68B21997279200E4F21A /* DEMOMenuViewController.m */,
 				42DE68AE1997220900E4F21A /* DEMORootViewController.h */,
@@ -683,6 +715,7 @@
 		42DB2115198791A500AB8DF6 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E4719A6512F0062C520 /* avatar@2x.jpg */,
 				42C403D01989492400AB039A /* Media */,
 				42DB211D1987C94D00AB8DF6 /* Marker */,
 				42DB2116198791AA00AB8DF6 /* Bubble */,
@@ -734,6 +767,29 @@
 				42DE68A719971CE300E4F21A /* UIViewController+REFrostedViewController.m */,
 			);
 			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+		42FC8E4919A7B4DD0062C520 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				42FC8E4A19A7B4DD0062C520 /* MJRefresh.bundle */,
+				42FC8E4B19A7B4DD0062C520 /* MJRefresh.h */,
+				42FC8E4C19A7B4DD0062C520 /* MJRefreshBaseView.h */,
+				42FC8E4D19A7B4DD0062C520 /* MJRefreshBaseView.m */,
+				42FC8E4E19A7B4DD0062C520 /* MJRefreshConst.h */,
+				42FC8E4F19A7B4DD0062C520 /* MJRefreshConst.m */,
+				42FC8E5019A7B4DD0062C520 /* MJRefreshFooterView.h */,
+				42FC8E5119A7B4DD0062C520 /* MJRefreshFooterView.m */,
+				42FC8E5219A7B4DD0062C520 /* MJRefreshHeaderView.h */,
+				42FC8E5319A7B4DD0062C520 /* MJRefreshHeaderView.m */,
+				42FC8E5419A7B4DD0062C520 /* UIScrollView+Extension.h */,
+				42FC8E5519A7B4DD0062C520 /* UIScrollView+Extension.m */,
+				42FC8E5619A7B4DD0062C520 /* UIScrollView+MJRefresh.h */,
+				42FC8E5719A7B4DD0062C520 /* UIScrollView+MJRefresh.m */,
+				42FC8E5819A7B4DD0062C520 /* UIView+Extension.h */,
+				42FC8E5919A7B4DD0062C520 /* UIView+Extension.m */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 		A8691230DC64400FB5CF6D15 /* Frameworks */ = {
@@ -848,6 +904,7 @@
 				42454B92197418EB00465494 /* Main.storyboard in Resources */,
 				423B838C1985651200B11C04 /* marker@2x.png in Resources */,
 				42DB212D1987C9FD00AB8DF6 /* v3_location_temple.png in Resources */,
+				42FC8E4819A6512F0062C520 /* avatar@2x.jpg in Resources */,
 				42DB21311987CA1800AB8DF6 /* v3_show_2.png in Resources */,
 				42C67B2719794BD1001FC9C5 /* mapapi.bundle in Resources */,
 				422CC5871976DD4500E9987D /* v3_ic_action_menu_message.png in Resources */,
@@ -861,6 +918,7 @@
 				42DB211F1987C95600AB8DF6 /* v3_location_4.png in Resources */,
 				42DB212C1987C9FD00AB8DF6 /* v3_location_show.png in Resources */,
 				42C403DB198A96C900AB039A /* iToast.podspec in Resources */,
+				42FC8E5A19A7B4DD0062C520 /* MJRefresh.bundle in Resources */,
 				4296B8BC19782D880014DB6E /* tiyu@2x.png in Resources */,
 				42DB21261987C9C800AB8DF6 /* v3_location_canteen.png in Resources */,
 				42BC63BA1986914B005B6E37 /* Bubble.xib in Resources */,
@@ -925,11 +983,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42C00109197C20790094001C /* QueryObject.swift in Sources */,
+				42FC8E5E19A7B4DD0062C520 /* MJRefreshHeaderView.m in Sources */,
 				42DE68A919971CE300E4F21A /* REFrostedContainerViewController.m in Sources */,
+				42FC8E5F19A7B4DD0062C520 /* UIScrollView+Extension.m in Sources */,
+				42FC8E6019A7B4DD0062C520 /* UIScrollView+MJRefresh.m in Sources */,
 				42BC63BC1986914B005B6E37 /* CalloutMapAnnotation.m in Sources */,
 				42C403D3198A8E1D00AB039A /* SCLAlertView.swift in Sources */,
 				423D21DB1976E2C900679747 /* NewsCategoryCell.m in Sources */,
 				42DE68AC19971CE300E4F21A /* UIView+REFrostedViewController.m in Sources */,
+				42FC8E5B19A7B4DD0062C520 /* MJRefreshBaseView.m in Sources */,
 				42BC63AB19868C8E005B6E37 /* LocationCategory.m in Sources */,
 				42C0010D197EAB400094001C /* PostNewTaskVC.swift in Sources */,
 				42DE68A819971CE300E4F21A /* RECommonFunctions.m in Sources */,
@@ -937,11 +999,14 @@
 				42DE68AD19971CE300E4F21A /* UIViewController+REFrostedViewController.m in Sources */,
 				423D21DE1976FE8400679747 /* NewsCategoryViewController.mm in Sources */,
 				42C67B2C197983A7001FC9C5 /* RESTClient.swift in Sources */,
+				42FC8E5C19A7B4DD0062C520 /* MJRefreshConst.m in Sources */,
 				42454B8F197418EB00465494 /* ViewController.swift in Sources */,
 				422CC57E1976CC7E00E9987D /* MainVC.swift in Sources */,
+				42FC8E6119A7B4DD0062C520 /* UIView+Extension.m in Sources */,
 				42DE68B01997220900E4F21A /* DEMORootViewController.m in Sources */,
 				42BC63BB1986914B005B6E37 /* CallOutAnnotationView.m in Sources */,
 				42C00107197BFB100094001C /* Checkin.swift in Sources */,
+				42FC8E4619A4D9580062C520 /* DEMOSecondViewController.m in Sources */,
 				42454B8D197418EB00465494 /* gMission.xcdatamodeld in Sources */,
 				42BC63BD1986914B005B6E37 /* CustomPointAnnotation.m in Sources */,
 				42DE68B31997279200E4F21A /* DEMOMenuViewController.m in Sources */,
@@ -953,6 +1018,7 @@
 				42C403C41988EC8B00AB039A /* AnswerTaskVC.swift in Sources */,
 				42BC63B91986914B005B6E37 /* Bubble.m in Sources */,
 				4296B8C0197834910014DB6E /* MenuViewController.swift in Sources */,
+				42FC8E5D19A7B4DD0062C520 /* MJRefreshFooterView.m in Sources */,
 				42454B8A197418EB00465494 /* AppDelegate.swift in Sources */,
 				426FE9FD197EC58800C91A05 /* Agent.swift in Sources */,
 				42454BBD1975813D00465494 /* RightMenuViewController.swift in Sources */,

@@ -10,7 +10,8 @@
 //#import "DEMOHomeViewController.h"
 //#import "DEMOSecondViewController.h"
 #import "UIViewController+REFrostedViewController.h"
-//#import "gMission-Swift.h"
+#import "DEMOSecondViewController.h"
+#import "gMission-Swift.h"
 
 @interface DEMOMenuViewController ()
 
@@ -61,7 +62,7 @@
 {
     cell.backgroundColor = [UIColor clearColor];
     cell.textLabel.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:17];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:14];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)sectionIndex
@@ -73,7 +74,7 @@
     view.backgroundColor = [UIColor colorWithRed:167/255.0f green:167/255.0f blue:167/255.0f alpha:0.6f];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 8, 0, 0)];
-    label.text = @"Friends Online";
+    label.text = @"任务";
     label.font = [UIFont systemFontOfSize:15];
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
@@ -97,11 +98,13 @@
     UINavigationController *navigationController = (UINavigationController *)self.frostedViewController.contentViewController;
     
     if (indexPath.section == 0 && indexPath.row == 0) {
-        //MainVC *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"homeController"];
-        //navigationController.viewControllers = @[homeViewController];
-    } else {
-//        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
-//        navigationController.viewControllers = @[secondViewController];
+        MainVC *homeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"homeController"];
+        navigationController.viewControllers = @[homeViewController];
+    } else if(indexPath.section == 0 && indexPath.row == 1){
+        DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
+        navigationController.viewControllers = @[secondViewController];
+    }else {
+       
     }
     
     [self.frostedViewController hideMenuViewController];
@@ -112,7 +115,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 54;
+    return 34;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -122,7 +125,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex
 {
-    return 3;
+    if(sectionIndex == 0)
+        return 4;
+    if(sectionIndex == 1)
+        return 3;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -136,10 +143,10 @@
     }
     
     if (indexPath.section == 0) {
-        NSArray *titles = @[@"Home", @"Profile", @"Chats"];
+        NSArray *titles = @[@"地图", @"主页", @"新任务",@"消息"];
         cell.textLabel.text = titles[indexPath.row];
     } else {
-        NSArray *titles = @[@"John Appleseed", @"John Doe", @"Test User"];
+        NSArray *titles = @[@"我发送的问题", @"我回答的问题", @"退出"];
         cell.textLabel.text = titles[indexPath.row];
     }
     

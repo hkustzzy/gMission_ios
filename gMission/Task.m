@@ -13,6 +13,12 @@
 
 @implementation Task
 
+
+NSString* TASK_TYPE_DEFAULT = @"mix";
+NSString* TASK_TYPE_TEXT = @"text";
+NSString* TASK_TYPE_PHOTO = @"image";
+NSString* TASK_TYPE_VIDEO = @"video";
+
 - (id)initWithBrief:(NSString *)brief {
     self = [super init];
     

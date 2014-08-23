@@ -9,10 +9,6 @@
 #import <JSONModel/JSONModel.h>
 #import "Location.h"
 
-NSString* TASK_TYPE_DEFAULT = @"mix";
-NSString* TASK_TYPE_TEXT = @"text";
-NSString* TASK_TYPE_PHOTO = @"image";
-NSString* TASK_TYPE_VIDEO = @"video";
 
 
 @interface Task: JSONModel

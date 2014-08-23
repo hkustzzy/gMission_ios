@@ -61,6 +61,7 @@ class MainVC: UIViewController, BMKLocationServiceDelegate, APIControllerProtoco
         var center:CLLocationCoordinate2D = CLLocationCoordinate2DMake(22.540134,113.979451)
         self.mapView.centerCoordinate = center
         self.mapView.zoomLevel = 16
+        self.view.bringSubviewToFront(self.btAskQuestion)
         api.getCategoryList()
     }
     
