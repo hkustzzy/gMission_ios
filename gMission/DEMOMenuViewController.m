@@ -103,8 +103,14 @@
     } else if(indexPath.section == 0 && indexPath.row == 1){
         DEMOSecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondController"];
         navigationController.viewControllers = @[secondViewController];
-    }else {
-       
+    }else if(indexPath.section == 1 && indexPath.row == 0){
+        ShowMyTasksVC *showmytasks = [self.storyboard instantiateViewControllerWithIdentifier:@"showMyTasks"];
+        navigationController.viewControllers = @[showmytasks];
+                                      
+    }else if(indexPath.section == 1 && indexPath.row == 1){
+        ShowMyAnswersVC *showmytasks = [self.storyboard instantiateViewControllerWithIdentifier:@"showMyAnswers"];
+        navigationController.viewControllers = @[showmytasks];
+
     }
     
     [self.frostedViewController hideMenuViewController];

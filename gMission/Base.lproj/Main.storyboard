@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VZ1-ED-e47">
     <dependencies>
-        <deployment version="1792" defaultVersion="1792" identifier="iOS"/>
+        <deployment version="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
@@ -268,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y48-G1-44g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-141" y="2540"/>
+            <point key="canvasLocation" x="180" y="2617"/>
         </scene>
         <!--发送任务-->
         <scene sceneID="nRw-Uw-U9B">
@@ -717,6 +717,8 @@
                     <connections>
                         <segue destination="fZO-AU-k1F" kind="relationship" relationship="rootViewController" id="Z8A-E1-Qcz"/>
                         <segue destination="71u-RJ-rau" kind="push" identifier="Second" id="GZ6-k8-lR9"/>
+                        <segue destination="JVW-w9-kXw" kind="show" id="PwV-ov-bjd"/>
+                        <segue destination="ge7-qm-aZv" kind="show" id="X17-5b-qZa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LdO-lL-16H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -744,7 +746,6 @@
         <!--Menu View Controller-->
         <scene sceneID="Lp4-KK-nAG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xiZ-aw-hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController restorationIdentifier="menuController" storyboardIdentifier="menuController" id="h4G-2x-roF" customClass="DEMOMenuViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dVP-7v-WbS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -766,14 +767,16 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xiZ-aw-hw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-492" y="3379"/>
         </scene>
-        <!--Table View Controller-->
+        <!--我发送的问题-->
         <scene sceneID="AH3-ve-i3N">
             <objects>
-                <tableViewController id="JVW-w9-kXw" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="showMyTasks" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JVW-w9-kXw" customClass="ShowMyTasksVC" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SRz-TU-Fc8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -789,10 +792,17 @@
                             <outlet property="delegate" destination="JVW-w9-kXw" id="qzx-k3-hfY"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="我发送的问题" id="qTR-T3-C2x">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="IHr-r3-kT1">
+                            <connections>
+                                <action selector="showMenu" destination="JVW-w9-kXw" id="hDX-AI-Os1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Moe-8C-fYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2037" y="2283"/>
+            <point key="canvasLocation" x="-1531.5" y="2617"/>
         </scene>
         <!--Second Controller-->
         <scene sceneID="sc0-Ky-cNL">
@@ -803,32 +813,9 @@
                         <viewControllerLayoutGuide type="bottom" id="I6G-2C-zhv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ffa-H2-bxv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNT-5b-8hK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Second Controller" id="wNy-Zz-JYX">
-                                        <barButtonItem key="leftBarButtonItem" title="Menu" id="0ps-q5-S39"/>
-                                    </navigationItem>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                </variation>
-                            </navigationBar>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="0.79024568979999998" blue="0.39722655649999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="sNT-5b-8hK"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="sNT-5b-8hK"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Second Controller" id="FvU-pV-8Yc">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="Enl-Zn-7sS">
@@ -840,7 +827,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAy-B6-KIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1074" y="2571"/>
+            <point key="canvasLocation" x="-696" y="2617"/>
+        </scene>
+        <!--我回答的问题-->
+        <scene sceneID="IRv-gW-rQc">
+            <objects>
+                <tableViewController storyboardIdentifier="showMyAnswers" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ge7-qm-aZv" customClass="ShowMyAnswersVC" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f2d-LL-2cW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6VA-Q6-WXs">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6VA-Q6-WXs" id="K87-vn-Zf1">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ge7-qm-aZv" id="mB0-Ck-alN"/>
+                            <outlet property="delegate" destination="ge7-qm-aZv" id="1VX-wm-iVI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="我回答的问题" id="e7k-Mq-ghz">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="S7A-cO-QIq">
+                            <connections>
+                                <action selector="showMenu" destination="ge7-qm-aZv" id="iSn-qe-dza"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGZ-Bv-mMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2278.5" y="2617"/>
         </scene>
     </scenes>
 </document>

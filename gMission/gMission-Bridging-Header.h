@@ -37,5 +37,8 @@
 #import "REFrostedViewController.h"
 #import "UIViewController+REFrostedViewController.h"
 #import "MJRefresh.h"
+#import "ShowMyAnswersVC.h"
+#import "ShowMyTasksVC.h"
+#import "TaskCell.h"
 //#import "DEMORootViewController.h"
 //#import "DEMOMenuViewController.h"

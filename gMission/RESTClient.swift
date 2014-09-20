@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+@objc
 protocol APIControllerProtocol {
     func didReceiveAPIResults(results: NSDictionary)
 }
@@ -84,10 +84,10 @@ class RESTClient{
 
         JSONHTTPClient.postJSONFromURLWithString(URLString, bodyString: task.toJSONString(), completion: {
             response, err in
-            if(err){
+            if(err != nil){
                 println(err)
             }
-            if(response){
+            if((response) != nil){
                 println(response)
             }
             })
@@ -110,7 +110,9 @@ class RESTClient{
         get(urlString)
     }
     
+    //task
     
+        
     func upload(path:String){
 
         var urlString = URL_BASE + URL_IMAGE + "/upload"
@@ -145,7 +147,7 @@ class RESTClient{
         var req = NSURLRequest(URL: URL)
         var queue = NSOperationQueue();
         NSURLConnection.sendAsynchronousRequest(req, queue: queue, completionHandler: { response, data, error in
-            if error
+            if (error != nil)
             {
                 dispatch_async(dispatch_get_main_queue(),
                     {
@@ -174,7 +176,7 @@ class RESTClient{
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
         println("Task completed")
-            if(error) {
+            if(error != nil) {
                     // If there is an error in the web request, print it to the console
                     println(error.localizedDescription)
                     return

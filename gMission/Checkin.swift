@@ -34,7 +34,7 @@ class Checkin: NSObject {
     
     init(dict: NSDictionary){
 //        var checkin:Checkin = Checkin()
-        if dict["attachment_id"]{
+        if dict["attachment_id"] != nil{
             self.attachment_id = dict["attachment_id"] as? Int
             self.content = dict["content"] as? String
             self.created_on = dict["created_on"] as? String

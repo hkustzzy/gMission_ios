@@ -35,6 +35,8 @@
 		4296B8BA1977C0090014DB6E /* NewsCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4296B8B91977C0090014DB6E /* NewsCategoryObject.m */; };
 		4296B8BC19782D880014DB6E /* tiyu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4296B8BB19782D880014DB6E /* tiyu@2x.png */; };
 		4296B8C0197834910014DB6E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4296B8BF197834910014DB6E /* MenuViewController.swift */; };
+		42B988CA19AF71F0008299BC /* MyTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B988C919AF71F0008299BC /* MyTasks.swift */; };
+		42B988CC19AF89A5008299BC /* MyTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B988CB19AF89A5008299BC /* MyTaskCell.swift */; };
 		42BC63AB19868C8E005B6E37 /* LocationCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC63AA19868C8E005B6E37 /* LocationCategory.m */; };
 		42BC63AE19868F7C005B6E37 /* LocationRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC63AD19868F7C005B6E37 /* LocationRectangle.m */; };
 		42BC63B91986914B005B6E37 /* Bubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BC63B11986914B005B6E37 /* Bubble.m */; };
@@ -99,6 +101,10 @@
 		42FC8E5F19A7B4DD0062C520 /* UIScrollView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5519A7B4DD0062C520 /* UIScrollView+Extension.m */; };
 		42FC8E6019A7B4DD0062C520 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5719A7B4DD0062C520 /* UIScrollView+MJRefresh.m */; };
 		42FC8E6119A7B4DD0062C520 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E5919A7B4DD0062C520 /* UIView+Extension.m */; };
+		42FC8E6519AA3CA90062C520 /* ShowMyTasksVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E6419AA3CA90062C520 /* ShowMyTasksVC.m */; };
+		42FC8E6719AA3D9B0062C520 /* ShowMyAnswersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E6619AA3D9B0062C520 /* ShowMyAnswersVC.m */; };
+		42FC8E6B19AB76B10062C520 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FC8E6A19AB76B10062C520 /* TaskCell.m */; };
+		42FC8E6D19AB79D20062C520 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FC8E6C19AB79D20062C520 /* TaskCell.xib */; };
 		9986B33812694477A481F46E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE79581C2745450EB5E6EB28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +202,8 @@
 		4296B8B91977C0090014DB6E /* NewsCategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsCategoryObject.m; path = ../../../GithubProject/SinaNews/SinaNews/NewsCategoryObject.m; sourceTree = "<group>"; };
 		4296B8BB19782D880014DB6E /* tiyu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tiyu@2x.png"; path = "../../../GithubProject/SinaNews/SinaNews/images/tiyu@2x.png"; sourceTree = "<group>"; };
 		4296B8BF197834910014DB6E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		42B988C919AF71F0008299BC /* MyTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTasks.swift; sourceTree = "<group>"; };
+		42B988CB19AF89A5008299BC /* MyTaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTaskCell.swift; sourceTree = "<group>"; };
 		42BC63A919868BB4005B6E37 /* LocationCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationCategory.h; sourceTree = "<group>"; };
 		42BC63AA19868C8E005B6E37 /* LocationCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCategory.m; sourceTree = "<group>"; };
 		42BC63AC19868E08005B6E37 /* LocationRectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationRectangle.h; sourceTree = "<group>"; };
@@ -346,6 +354,13 @@
 		42FC8E5719A7B4DD0062C520 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		42FC8E5819A7B4DD0062C520 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		42FC8E5919A7B4DD0062C520 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		42FC8E6219A845E30062C520 /* ShowMyTasksVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyTasksVC.h; sourceTree = "<group>"; };
+		42FC8E6319A846020062C520 /* ShowMyAnswersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAnswersVC.h; sourceTree = "<group>"; };
+		42FC8E6419AA3CA90062C520 /* ShowMyTasksVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMyTasksVC.m; sourceTree = "<group>"; };
+		42FC8E6619AA3D9B0062C520 /* ShowMyAnswersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMyAnswersVC.m; sourceTree = "<group>"; };
+		42FC8E6919AB75EA0062C520 /* TaskCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		42FC8E6A19AB76B10062C520 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		42FC8E6C19AB79D20062C520 /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
 		AE79581C2745450EB5E6EB28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -507,6 +522,11 @@
 				4296B8BF197834910014DB6E /* MenuViewController.swift */,
 				42C0010C197EAB400094001C /* PostNewTaskVC.swift */,
 				42C403C31988EC8B00AB039A /* AnswerTaskVC.swift */,
+				42FC8E6219A845E30062C520 /* ShowMyTasksVC.h */,
+				42FC8E6319A846020062C520 /* ShowMyAnswersVC.h */,
+				42FC8E6419AA3CA90062C520 /* ShowMyTasksVC.m */,
+				42FC8E6619AA3D9B0062C520 /* ShowMyAnswersVC.m */,
+				42B988C919AF71F0008299BC /* MyTasks.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +534,7 @@
 		42454BB2197566C200465494 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				42FC8E6819AB75420062C520 /* Cell */,
 				42DB211319878FD400AB8DF6 /* BubbleView */,
 				42BC63AF1986914B005B6E37 /* customCalloutView */,
 			);
@@ -792,6 +813,17 @@
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
+		42FC8E6819AB75420062C520 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				42FC8E6C19AB79D20062C520 /* TaskCell.xib */,
+				42FC8E6919AB75EA0062C520 /* TaskCell.h */,
+				42FC8E6A19AB76B10062C520 /* TaskCell.m */,
+				42B988CB19AF89A5008299BC /* MyTaskCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		A8691230DC64400FB5CF6D15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -903,6 +935,7 @@
 			files = (
 				42454B92197418EB00465494 /* Main.storyboard in Resources */,
 				423B838C1985651200B11C04 /* marker@2x.png in Resources */,
+				42FC8E6D19AB79D20062C520 /* TaskCell.xib in Resources */,
 				42DB212D1987C9FD00AB8DF6 /* v3_location_temple.png in Resources */,
 				42FC8E4819A6512F0062C520 /* avatar@2x.jpg in Resources */,
 				42DB21311987CA1800AB8DF6 /* v3_show_2.png in Resources */,
@@ -992,6 +1025,7 @@
 				423D21DB1976E2C900679747 /* NewsCategoryCell.m in Sources */,
 				42DE68AC19971CE300E4F21A /* UIView+REFrostedViewController.m in Sources */,
 				42FC8E5B19A7B4DD0062C520 /* MJRefreshBaseView.m in Sources */,
+				42FC8E6B19AB76B10062C520 /* TaskCell.m in Sources */,
 				42BC63AB19868C8E005B6E37 /* LocationCategory.m in Sources */,
 				42C0010D197EAB400094001C /* PostNewTaskVC.swift in Sources */,
 				42DE68A819971CE300E4F21A /* RECommonFunctions.m in Sources */,
@@ -1001,6 +1035,7 @@
 				42C67B2C197983A7001FC9C5 /* RESTClient.swift in Sources */,
 				42FC8E5C19A7B4DD0062C520 /* MJRefreshConst.m in Sources */,
 				42454B8F197418EB00465494 /* ViewController.swift in Sources */,
+				42B988CA19AF71F0008299BC /* MyTasks.swift in Sources */,
 				422CC57E1976CC7E00E9987D /* MainVC.swift in Sources */,
 				42FC8E6119A7B4DD0062C520 /* UIView+Extension.m in Sources */,
 				42DE68B01997220900E4F21A /* DEMORootViewController.m in Sources */,
@@ -1009,6 +1044,7 @@
 				42FC8E4619A4D9580062C520 /* DEMOSecondViewController.m in Sources */,
 				42454B8D197418EB00465494 /* gMission.xcdatamodeld in Sources */,
 				42BC63BD1986914B005B6E37 /* CustomPointAnnotation.m in Sources */,
+				42FC8E6719AA3D9B0062C520 /* ShowMyAnswersVC.m in Sources */,
 				42DE68B31997279200E4F21A /* DEMOMenuViewController.m in Sources */,
 				42C0010B197C21A00094001C /* FilterObject.swift in Sources */,
 				42C403CB1989442000AB039A /* RKTabView.m in Sources */,
@@ -1017,12 +1053,14 @@
 				42DE68AB19971CE300E4F21A /* UIImage+REFrostedViewController.m in Sources */,
 				42C403C41988EC8B00AB039A /* AnswerTaskVC.swift in Sources */,
 				42BC63B91986914B005B6E37 /* Bubble.m in Sources */,
+				42B988CC19AF89A5008299BC /* MyTaskCell.swift in Sources */,
 				4296B8C0197834910014DB6E /* MenuViewController.swift in Sources */,
 				42FC8E5D19A7B4DD0062C520 /* MJRefreshFooterView.m in Sources */,
 				42454B8A197418EB00465494 /* AppDelegate.swift in Sources */,
 				426FE9FD197EC58800C91A05 /* Agent.swift in Sources */,
 				42454BBD1975813D00465494 /* RightMenuViewController.swift in Sources */,
 				42DE68AA19971CE300E4F21A /* REFrostedViewController.m in Sources */,
+				42FC8E6519AA3CA90062C520 /* ShowMyTasksVC.m in Sources */,
 				4296B8BA1977C0090014DB6E /* NewsCategoryObject.m in Sources */,
 				422CC5781976C5F100E9987D /* JASidePanelController.m in Sources */,
 				426FEA00197FBC8000C91A05 /* GitHubUserModel.m in Sources */,
